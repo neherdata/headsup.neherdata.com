@@ -1,0 +1,31 @@
+.Game {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  &-activeItem {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    font-size: 4.25rem;
+  }
+  &--correct {
+    left: 0;
+  }
+  &--skip {
+    right: 0;
+  }
+  &-image {
+    max-width: 100%;
+    max-height: calc(100vh - 134px);
+  }
+}
+
+.Timer {
+  font-family: "Inconsolata", Monaco, monospace;
+  font-weight: bold;
+
+  &.is-countdown {
+    color: #b11738;
+  }
+}
